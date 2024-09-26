@@ -1,0 +1,15 @@
+/*You can alphabetize or organise by when they show up on a page*/
+body {
+    background-color: rgb(200, 236, 248);
+}
+a {
+    color: #000;
+    padding: 25px;
+    font-size: 24px;
+}
+h1 {
+    text-align: center;
+}
+img {
+    width: 300px; 
+}
