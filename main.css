@@ -1,9 +1,10 @@
 /*You can alphabetize or organise by when they show up on a page*/
 body {
-    background-color: rgb(200, 236, 248);
+    background-color: rgb(6, 49, 62);
+    color: white;
 }
 a {
-    color: #000;
+    color: #fff;
     padding: 25px;
     font-size: 24px;
 }
