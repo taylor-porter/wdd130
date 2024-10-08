@@ -1,16 +1,40 @@
 /*You can alphabetize or organise by when they show up on a page*/
+/* * {
+    border: 2px solid red;
+} */
 body {
-    background-color: rgb(6, 49, 62);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    line-height: 24px;
 }
-a {
-    color: #fff;
+nav, nav a, footer{
+    color:rgb(255, 255, 255);
+    background-color:rgb(6, 49, 62);
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
     padding: 25px;
     font-size: 24px;
+}
+nav a:hover{
+    background-color: rgb(6, 74, 95);;
+}
+a {
+   
 }
 h1 {
     text-align: center;
 }
 img {
     width: 300px; 
+    display: block;
+    margin: 0 auto;
+}
+p{
+    width: 70%;
+    margin:15px auto;
+    text-align: center;
+    line-height: 1.5em;
 }
