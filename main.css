@@ -3,9 +3,11 @@
     border: 2px solid red;
 } */
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 250, 242);
     color: rgb(0, 0, 0);
     line-height: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
 }
 nav, nav a, footer{
     color:rgb(255, 255, 255);
@@ -17,18 +19,20 @@ nav a{
     text-decoration: none;
     padding: 25px;
     font-size: 24px;
+    text-align: center;
 }
 nav a:hover{
-    background-color: rgb(6, 74, 95);;
+    background-color: rgb(6, 74, 95);
 }
 a {
-   
+   color:inherit;
 }
 h1 {
     text-align: center;
 }
 img {
-    width: 300px; 
+    width: 30%; 
+    min-width: 300px;
     display: block;
     margin: 0 auto;
 }
