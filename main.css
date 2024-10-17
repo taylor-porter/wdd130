@@ -1,13 +1,16 @@
-/*You can alphabetize or organise by when they show up on a page*/
+/*You can alphabetize or organize by when they show up on a page*/
 /* * {
     border: 2px solid red;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Sketch&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 body {
     background-color: rgb(255, 250, 242);
     color: rgb(0, 0, 0);
     line-height: 24px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin:0;
+    margin: 0;
+    padding: 0;
 }
 #content {
     max-width: 1600px;
@@ -22,9 +25,10 @@ nav, nav a, footer{
 }
 nav a{
     text-decoration: none;
-    padding: 25px;
-    font-size: 24px;
+    padding: 35px 25px;
+    font-size: 24px; /*24px*/
     text-align: center;
+    font-family: "Shadows Into Light", "Londrina Sketch", inehrit;
 }
 nav a:hover{
     background-color: rgb(6, 74, 95);
@@ -36,14 +40,30 @@ h1 {
     text-align: center;
 }
 img {
-    width: 30%; 
+    width: 40%; 
     min-width: 300px;
     display: block;
     margin: 0 auto;
+    /* make it a circle:
+    object-fit: cover;
+    aspect-ratio: 1;
+    border-radius: 50%; */
 }
 p{
-    width: 70%;
+    width: 40%;
     margin:15px auto;
     text-align: center;
     line-height: 1.5em;
+     background-color: rgb(6, 49, 62);/* rgb(6, 74, 95); */
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    /* border: 5px solid rgb(6, 49, 62); */
+    min-width: 300px;
+
+    /* border-radius: 10px; */
+}
+footer p{
+    background-color:rgb(6, 49, 62);
+    border: 0;
 }

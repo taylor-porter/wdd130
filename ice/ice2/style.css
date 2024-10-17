@@ -1,0 +1,33 @@
+body{
+    margin:0;
+    padding:0;
+}
+.content-container{
+    text-align:center;
+    margin-top:50px;
+
+}
+.content{
+    margin:auto;
+    width:66%;
+    max-width: 730px;
+    /* margin: 50px auto; 
+    /* min-width: 600px; */
+}
+#top{
+    width:100%;
+    margin: 0;
+    padding:0;
+    display: block;
+}
+.circleImg{
+    margin: 0;
+    text-align:center;
+    background-color: #737373;
+}
+.circleImg img{
+    width: 19.1%;
+    border-radius: 50%;
+    border: .8vw solid #444444;
+    margin: 3.77%;
+}
