@@ -344,6 +344,12 @@ img.float-left , img.float-right {
         width: 80%;
         display: block;
         margin: 0 auto;
+        
+    }
+    .mountains{
+        box-shadow: 5px 0px 10px darkgray;
+    }
+    .msg{
         box-shadow: 5px 5px 10px darkgray;
     }
     footer {
