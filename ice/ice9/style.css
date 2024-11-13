@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+}
+article.card{
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #3e5b8a;
+    color: white;
+    
+}
+
+footer section{
+    margin: 15px 0px;
+}
+h2{
+    margin: 0;
+    font-weight: lighter;
+}
+h3{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.reads{
+    border-right: 1px solid white;
+}
+.comments{
+    border-left: 1px solid white;
+}
+sup{
+    font-size: 15px;
+}
