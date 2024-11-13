@@ -304,10 +304,7 @@ img.float-left , img.float-right {
 
 
 @media screen and (max-width: 900px) {
-    header{
-        grid-template-columns: 300px auto;
-    }
-    #hero, main.home-grid, main.blog-grid {
+    #hero, .home-grid, .blog-grid {
         display: block;
         height: auto;
     }
@@ -316,11 +313,6 @@ img.float-left , img.float-right {
     }
     nav a {
         display: block;
-        padding: 15px;
-    }
-    /* optional */
-    .logo{ 
-        width: 50%;
         padding: 15px;
     }
     #hero {
@@ -333,8 +325,7 @@ img.float-left , img.float-right {
         display: none;
     }
     #hero-msg h1 {
-        color: #146944;
-        font-size: 1.7em;
+        color: #6f7364;
     }
     .home-title {
         font-size: 25px;
@@ -350,8 +341,9 @@ img.float-left , img.float-right {
         width: 80%;
         display: block;
         margin: 0 auto;
-        box-shadow: 5px 5px 10px darkgray;
-
+    }
+    footer {
+        margin-top: 25px;
     }
 
     /* styles for blog page */
