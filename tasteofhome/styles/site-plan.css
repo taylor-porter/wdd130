@@ -13,7 +13,7 @@ Fonts are separated by a | */
   /* #540B0E */
 
   /* change the values below to your chosen font(s) */
-  --heading-font: Kurale, "EB Garamond", Garamond, serif;
+  --heading-font: Kurale, Kurale, "EB Garamond", Garamond, serif;
   /* "Patrick Hand", "Nothing You Could Do", "Gochi Hand"; */
   --paragraph-font: "EB Garamond", Garamond, serif;
 
