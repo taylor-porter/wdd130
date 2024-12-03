@@ -67,3 +67,8 @@ footer p{
     background-color:rgb(6, 49, 62);
     border: 0;
 }
+@media screen and (max-width: 900px) {
+    nav, footer{
+        flex-direction: column;
+    }
+}
