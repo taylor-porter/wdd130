@@ -47,9 +47,8 @@ nav a{
   font-family: kurale, "EB Garamond", garamond, serif;
   font-size: 1.3em;
   width: 100%;
-  padding: 45px;
-  padding-inline: 0;
-  transition: .3s;
+  padding: 45px 0;
+  transition: background-color .3s;
   text-align: center;
   display: block;
 
