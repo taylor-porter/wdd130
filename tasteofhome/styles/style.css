@@ -17,7 +17,7 @@ img{
 }
 header{
   display: grid;
-  grid-template-columns: 300px auto;
+  grid-template-columns: 200px auto;
   background-color: #980d10;
   justify-items: center;
   align-items: center;
@@ -48,10 +48,11 @@ nav a{
   font-size: 1.3em;
   width: 100%;
   padding: 45px;
+  padding-inline: 0;
   transition: .3s;
   text-align: center;
   display: block;
-  
+
 }
 nav a:hover{
   background-color: #650608;
@@ -158,7 +159,7 @@ p{
     margin-bottom: 10px;
   }
 
-  button{
+  button, .button-link{
     /* background-color: #c98301; */
     background-color: rgb(165, 107, 32);
     border: none;
@@ -167,9 +168,10 @@ p{
     border-radius: 5px;
     font-size: 1em;
     font-family: "EB Garamond", garamond, serif;
+    display: inline;
 
   }
-  button a{
+  .button-link a{
     text-decoration: none;
     color: white;
     font-family: "EB Garamond", garamond, serif;
@@ -316,15 +318,41 @@ p{
   nav a{
     width: 100%;
     height: 100%;
-    padding-inline: 0;
+    padding: 25px 0;
   }
-  header a img, .logo-link{
-    width: 90%;
-    height: auto;
-
+  .logo-link{
+    width: auto;
+    height: 100%;
+  }
+  header a img{
+    height: 100%;
+    width: auto;
   }
   #hero-msg{
     grid-column: 1/4;
+    max-width:80%;
+  }
+  p{
+    text-align: center;
+  }
+  .img-gallery{
+    grid-template-columns: 1fr 1fr;
+  }
+  .img-gallery img{
+    margin-top: 5%;
+  }
+  #img-3{
+    grid-column: 1/3;
+    aspect-ratio: 2;
+    width: 95%
+  }
+  .blog-posts article{
+    /* margin:0; */
+    width: 100%;
+  }
+  .blog-description, .blog-description p, p{
+    text-align:center;
+    margin-left: 0;
   }
   footer{
     gap: 15px;
@@ -332,5 +360,7 @@ p{
   footer .logo-link{
     width: 100px;
   }
+
+
 
 }
