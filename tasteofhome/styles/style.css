@@ -326,7 +326,7 @@ summary::after{
 summary.active::after{
   rotate: -540deg;
 }
-summary::marker{
+summary::marker, summary::-webkit-details-marker{
   content:""
 }
 summary:hover{
