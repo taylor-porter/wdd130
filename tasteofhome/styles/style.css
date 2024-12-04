@@ -327,7 +327,8 @@ summary.active::after{
   transform: rotate(-540deg);
 }
 summary::marker, summary::-webkit-details-marker{
-  content:""
+  content:"";
+  display: none;
 }
 summary:hover{
   background-color: rgb(124, 81, 24);
