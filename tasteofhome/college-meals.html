@@ -185,29 +185,23 @@
         var details = document.getElementsByTagName("details");
         var acc = document.getElementsByTagName("summary");
         var waitTime = getComputedStyle(document.getElementById("detail"));
-        waitTime = waitTime.getPropertyValue("transition-duration")
+        waitTime = waitTime.getPropertyValue("transition-duration");
         waitTime = waitTime.slice(0,-1);
         waitTime = waitTime * 1000;
         var i;
 
         for (i = 0; i < acc.length; i++) {
-        console.log(details[i])
+        console.log(details[i]);
         acc[i].addEventListener("click", function(event) {
             this.classList.toggle("active");
 
-            // if(this.parentElement.open()){
                 var panel = this.nextElementSibling;
                 if(this.parentElement.open == false){
-                    // if (panel.style.maxHeight) {
-                    // 
-                    // } else {
                         panel.style.maxHeight = panel.scrollHeight + "px";
-                    // }
                 }
                 else{
                     event.preventDefault();
                     var thing = this.parentElement;
-                    // alert(thing)
                     panel.style.maxHeight = null;
                     setTimeout(closeAcc, waitTime, thing);
 
