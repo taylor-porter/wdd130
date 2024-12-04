@@ -191,13 +191,13 @@
         var i;
 
         for (i = 0; i < acc.length; i++) {
-        console.log(details[i]);
         acc[i].addEventListener("click", function(event) {
             this.classList.toggle("active");
 
                 var panel = this.nextElementSibling;
                 if(this.parentElement.open == false){
-                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    console.log(panel.scrollHeight)
+                    panel.style.maxHeight = panel.scrollHeight + "px";
                 }
                 else{
                     event.preventDefault();
