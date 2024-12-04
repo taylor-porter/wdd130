@@ -324,7 +324,7 @@ summary::after{
   transition: rotate .6s;
 }
 summary.active::after{
-  rotate: -540deg;
+  transform: rotate(-540deg);
 }
 summary::marker, summary::-webkit-details-marker{
   content:""
@@ -342,22 +342,6 @@ details div {
     overflow: hidden;
     transition:.25s;
   }
-  details[open] div {
-    /* animation-name: show-details; */
-    /* animation-duration: 0.5s; */
-
-
-  }
-  summary[open]{
-    /* animation: none; */
-  }
-  @keyframes show-details {
-    from{
-      opacity:0;
-      translate: (translateY(-1vw))
-    }
-  }
-
 
 
 .active .accordion::after{
