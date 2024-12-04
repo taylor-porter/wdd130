@@ -70,7 +70,7 @@ p{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   /* grid-template-rows: 1fr 1fr 1fr; */
-  height: 30%;
+  /* height: 30%; */
   max-width: 100%;
   width: 100%;
   box-sizing: border-box;
@@ -274,7 +274,7 @@ p{
   .dots{
     cursor: default;
   }
- .active, .dot:hover {
+ .dots .active, .dot:hover {
     background-color: #717171;
     /* background-color: rgba(105, 105, 105, 0.8); */
   }
@@ -292,24 +292,86 @@ p{
 
 
   /* Style the buttons that are used to open and close the accordion panel */
-.accordion {
+summary{
+    background-color: rgb(165, 107, 32);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: "EB Garamond", garamond, serif;
+    /* display: inline; */
+    /* margin: 20px auto; */
+    margin-top: 20px;
     cursor: pointer;
-    transition: 0.4s;
+    user-select: none;
+    transition: background-color 0.2s;
+    width: 100px;
+    font-family: Kurale, "EB Garamond", garamond, serif;
+}
+summary::after{
+  content: ""; 
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 4px;
+  width: .9rem;
+  height: .9rem;
+  background-image: url("../images/arrow.svg"); 
+  background-size: .9rem .9rem;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  align-self: center;
+  filter: invert(1);
+  transition: rotate .6s;
+}
+summary.active::after{
+  rotate: -540deg;
+}
+summary::marker{
+  content:""
+}
+summary:hover{
+  background-color: rgb(124, 81, 24);
+
+}
+details{
+  margin: 40px auto;
+
+}
+details div {
+    max-height: 0;
+    overflow: hidden;
+    transition:.25s;
   }
-  .accordion::after{
-    content:" +";
-    rotate: 180deg;
+  details[open] div {
+    /* animation-name: show-details; */
+    /* animation-duration: 0.5s; */
+
+
+  }
+  summary[open]{
+    /* animation: none; */
+  }
+  @keyframes show-details {
+    from{
+      opacity:0;
+      translate: (translateY(-1vw))
+    }
   }
 
-.active::after{
-    content:" -";
+
+
+.active .accordion::after{
+  /* content: "^";
+  transform: rotate(45deg);
+  display: block; */
+
   }
   /* Style the accordion panel. Note: hidden by default */
-  .panel {
+  /* .panel {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-out;
-  }
+  } */
 
 
 
