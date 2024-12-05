@@ -452,7 +452,7 @@ details div li{
     height: 100%;
     width: auto;
   }
-  .mySlides img{
+  .mySlides img, .blog-section-title img{
     height: 60vw;
     max-height: 100vh;
   }
