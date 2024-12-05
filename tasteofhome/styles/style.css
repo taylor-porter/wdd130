@@ -452,7 +452,7 @@ details div li{
     height: 100%;
     width: auto;
   }
-  .mySlides img, .blog-section-title img{
+  /* .mySlides img, .blog-section-title img{
     height: 60vw;
     max-height: 100vh;
   }
@@ -466,7 +466,7 @@ details div li{
   #hero-msg h1{
     font-size: 7vw;
     padding: 4.3vw;
-  }
+  } */
 
 
   .img-gallery{
