@@ -18,7 +18,6 @@
             <a href="college-meals.html">College Meals</a>
         </nav>
     </header>
-    </header>
     <main>
         <div class="blog-title">
             <h1>Easy Meals to make in college</h1>
@@ -185,12 +184,16 @@
         var details = document.getElementsByTagName("details");
         var acc = document.getElementsByTagName("summary");
         var waitTime = getComputedStyle(document.getElementById("detail"));
+
+        //Calculate the amount of milleseconds it takes to transition between open and close
         waitTime = waitTime.getPropertyValue("transition-duration");
         waitTime = waitTime.slice(0,-1);
         waitTime = waitTime * 1000;
+
         var i;
 
         for (i = 0; i < acc.length; i++) {
+        //For this code, I took inspiration from Stack Overflow and Google AI, especially for event.preventDefault()
         acc[i].addEventListener("click", function(event) {
             this.classList.toggle("active");
 
@@ -202,9 +205,11 @@
                     panel.style.maxHeight = panel.scrollHeight + "px";
                     closed = false;
                 }
-                else{
+                else{ 
+                    //If the details is open, prevent it from closing automatically. 
                     closed = true
                     event.preventDefault();
+                    //Bring maxHeight down to 0 and close the details once the transition time is up
                     var thing = this.parentElement;
                     panel.style.maxHeight = null;
                     setTimeout(closeAcc, waitTime, thing);
@@ -214,6 +219,8 @@
                 
         });
         }
+        //When the window resizes, adjust the max height of the details panels if needed
+        //I learned how to use window.addEventListener("resize", function(){ from Google AI overview
         window.addEventListener("resize", function(){
             for (i = 0; i < acc.length; i++){
                 

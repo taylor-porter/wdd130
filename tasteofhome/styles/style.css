@@ -264,6 +264,8 @@ p{
     margin: 0 2px;
     /* background-color: rgba(133, 133, 133, 0.4); */
     background-color: #bbb;
+    background-color: #980d10;
+
 
     border-radius: 50%;
     display: inline-block;
@@ -275,7 +277,8 @@ p{
     cursor: default;
   }
  .dots .active, .dot:hover {
-    background-color: #717171;
+  background-color: #520708;
+  ;
     /* background-color: rgba(105, 105, 105, 0.8); */
   }
   
