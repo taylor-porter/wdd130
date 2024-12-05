@@ -387,7 +387,7 @@ details{
 
 }
 details div {
-    max-height: 0.01px;
+    max-height: 15px;
     overflow: hidden;
     transition:.25s;
     width: 50%;
