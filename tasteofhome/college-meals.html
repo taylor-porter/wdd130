@@ -185,7 +185,7 @@
         var acc = document.getElementsByTagName("summary");
         var waitTime = getComputedStyle(document.getElementById("detail"));
 
-        //Calculate the amount of milleseconds it takes to transition between open and close
+        //Calculate the amount of milliseconds it takes to transition between open and close
         waitTime = waitTime.getPropertyValue("transition-duration");
         waitTime = waitTime.slice(0,-1);
         waitTime = waitTime * 1000;
@@ -203,7 +203,6 @@
                 if(this.parentElement.open == false){
                     console.log(panel.scrollHeight)
                     setTimeout(openAcc, 1, panel)
-                    //panel.style.maxHeight = panel.scrollHeight + "px";
                     closed = false;
                 }
                 else{ 
