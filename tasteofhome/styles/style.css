@@ -370,10 +370,12 @@ summary::after{
   background-repeat: no-repeat;
   align-self: center;
   filter: invert(1);
-  transition: transform .6s ease;
+  /* transition: transform .6s ease; */
+  transition: transform .3s;
 }
 summary.active::after{
-  transform: rotate(-540deg);
+  /* transform: rotate(-540deg); */
+  transform: rotate(-180deg);
   transition: transform .6s ease;
 
 }

@@ -23,7 +23,7 @@
             <h1>Easy Meals to make in college</h1>
             <h4>Written by Taylor Porter - 11/21/2024</h4>
         </div>
-        <p>College is stressful! Moving away from home and meetig new people while kkeeping up with your shool work s a lot! Sometomes you just want something simple and comforting. These recipies are super easy to put together, and can be a saving grace for stressed students.</p>
+        <p>College is stressful! Moving away from home and meeting new people while keeping up with your school work is a lot! Sometimes you just want something simple and comforting. These recipes are super easy to put together, and can be a saving grace for stressed students.</p>
         <section class="left-align">
             <div class="blog-section-title">
                 <img src="images/ramen.jpg" alt="A bowl of spicy peanut butter ramen">
@@ -37,10 +37,10 @@
 
                 <div id="detail">
                     <ul>
-                        <li>2 tablespoons peanut butter</li>
+                        <li>2 tablespoons of peanut butter</li>
                         <li>1 tablespoon of Chili Garlic sauce (I usually use hot sauce with a pinch of chilli flakes and garlic powder)</li>
-                        <li>1 tablespoon soy sauce</li>
-                        <li>2 teaspoons brown sugar ( or 1 tablespoon if using natural peanut butter)</li>
+                        <li>1 tablespoon of soy sauce</li>
+                        <li>2 teaspoons of brown sugar ( or 1 tablespoon if using natural peanut butter)</li>
                         <li>1 packet of ramen</li>
                         <li>An egg, peas, 2-3 slices of ham (cut into pieces), or whatever you like!</li>
                         <li>Cut-up chives as a garnish (optional)</li>
@@ -98,7 +98,7 @@
         <section class="left-align">
             <div class="blog-section-title">
                 <img src="images/quesadilla.jpg" alt="A Quesadilla">
-                <h2>Barbeque Chicken Quesadilla</h2>
+                <h2>Barbecue Chicken Quesadilla</h2>
             </div>
             <p>I love myself a dang quesadilla! It’s definitely a life-saver when I’m in a crunch. Simply put a tortilla on a pan, add cheese, and boom! I always add a bit of extra cheese spilling out of the sides and on top of the quesadilla to get some nice, crispy cheese. It’s probably not good for cholesterol, but it’s good for my soul. I had some leftover grilled chicken one night, and I decided to chop it up and add it to my quesadilla with a spiral of barbeque sauce to give my quesadilla some extra protein and flavor.</p>
             
@@ -108,7 +108,7 @@
                     <ul>
                         <li>Tortilla</li>
                         <li>Shredded Cheese</li>
-                        <li>Barbeque sauce</li>
+                        <li>Barbecue sauce</li>
                         <li>Grilled chicken (this is a great way to use leftovers)</li>
                     </ul>
                 </div>
@@ -121,9 +121,9 @@
                         <li>Add the tortilla to a pan.</li>
                         <li>Sprinkle with a ton of cheese</li>
                         <li>Cut the chicken up into chunks, and sprinkle them on.</li>
-                        <li>Add a drissle of barbeque sauce</li>
-                        <li>You can fold it in hald, or add another tortilla on top</li>
-                        <li>Add cheese on top and on the side for chrispy cheese</li>
+                        <li>Add a drizzle of barbecue sauce</li>
+                        <li>You can fold it in half, or add another tortilla on top</li>
+                        <li>Add cheese on top and on the side for crispy cheese</li>
                         <li>Cook the quesadilla. When You are able to lift the cheese of the side from the pan, flip the quesadilla over/</li>
                         <li>Once the cheese on the bottom is golden brown, take the quesadilla of the pan. Slice and enjoy!</li>
                     </ol>
@@ -135,14 +135,14 @@
                 <img src="images/salsa-chicken-bigger.jpg" alt="A Quesadilla">
                 <h2>Salsa Chicken</h2>
             </div>
-            <p>This is the perfect set-it-and-forget-it dish. This dish cooks nicley in a slow, but you can also put it in the oven. The creamy, tender chicken only requires 3 ingredients - chicken breasts, salsa, and cream cheese.</p>
+            <p>This is the perfect set-it-and-forget-it dish. This dish cooks nicely in a slow, but you can also put it in the oven. The creamy, tender chicken only requires 3 ingredients - chicken breasts, salsa, and cream cheese.</p>
             
             <details>
                 <summary>Ingredients</summary>
                 <div>
                     <ul>
                         <li>3-4 chicken breasts</li>
-                        <li>1 packeage of cream cheese</li>
+                        <li>1 package of cream cheese</li>
                         <li>1-2 cups of salsa</li>
                         <li>Grilled chicken (this is a great way to use leftovers)</li>
                     </ul>
@@ -152,7 +152,7 @@
                 <summary>Directions</summary>
                     <div>
                         <ol>
-                            <li>Put the 3-4 chicken breats in the slow cooker or a baking dish</li>
+                            <li>Put the 3-4 chicken breasts in the slow cooker or a baking dish</li>
                             <li>Add a package of cream cheese and smother the chicken in the salsa</li>
                             <li>Cook in the slow cooker on low for 6-8 hours, on high for 3-4 hours, or cook it in the oven at 350&deg; for 40ish minutes</li>
                             <li>Shred the chicken while stirring everything together, and serve over rice</li>
@@ -202,7 +202,8 @@
 
                 if(this.parentElement.open == false){
                     console.log(panel.scrollHeight)
-                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    setTimeout(openAcc, 1, panel)
+                    //panel.style.maxHeight = panel.scrollHeight + "px";
                     closed = false;
                 }
                 else{ 
@@ -232,6 +233,9 @@
         })
         function closeAcc(item){
             item.open = false;
+        }
+        function openAcc(panel){
+            panel.style.maxHeight = panel.scrollHeight + "px";
         }
     </script>
 </body>
