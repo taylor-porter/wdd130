@@ -387,7 +387,7 @@ details{
 
 }
 details div {
-    max-height: 0;
+    max-height: 0.01px;
     overflow: hidden;
     transition:.25s;
     width: 50%;
@@ -462,6 +462,5 @@ details div li{
     width: 80%;
     text-align: left;
   }
-
 
 }
