@@ -371,6 +371,8 @@ summary::after{
 }
 summary.active::after{
   transform: rotate(-540deg);
+  transition: transform .6s ease;
+
 }
 summary::marker, summary::-webkit-details-marker{
   content:"";
