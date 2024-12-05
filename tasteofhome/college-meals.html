@@ -195,21 +195,34 @@
             this.classList.toggle("active");
 
                 var panel = this.nextElementSibling;
+                var closed = true;
+
                 if(this.parentElement.open == false){
                     console.log(panel.scrollHeight)
                     panel.style.maxHeight = panel.scrollHeight + "px";
+                    closed = false;
                 }
                 else{
+                    closed = true
                     event.preventDefault();
                     var thing = this.parentElement;
                     panel.style.maxHeight = null;
                     setTimeout(closeAcc, waitTime, thing);
 
                 }
+
                 
         });
         }
-
+        window.addEventListener("resize", function(){
+            for (i = 0; i < acc.length; i++){
+                
+                var panel2 = acc[i].nextElementSibling;
+                if (panel2.style.maxHeight.slice(0,-2) < panel2.scrollHeight){
+                    panel2.style.maxHeight = panel2.scrollHeight + "px";
+                }
+            }
+        })
         function closeAcc(item){
             item.open = false;
         }
