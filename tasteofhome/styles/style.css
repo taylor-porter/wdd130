@@ -394,6 +394,7 @@ details div {
     max-width: 100%;
     margin: 0 auto;
     text-align: justify;
+    font-size: 1.1em;
   }
 
 details div li{
