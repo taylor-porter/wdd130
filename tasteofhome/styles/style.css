@@ -40,7 +40,7 @@ header a img{
   justify-self: center;
 }
 .logo-link{
-  image-rendering: pixelated;
+
 }
 svg path {
   fill: white;
@@ -401,8 +401,7 @@ details div li{
     padding: 25px 0;
   }
   .logo-link{
-    width: auto;
-    height: 100%;
+    width: 100%;
   }
   header a img{
     height: 100%;
