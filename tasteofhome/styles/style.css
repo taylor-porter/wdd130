@@ -39,8 +39,7 @@ header a img{
   align-self: center;
   justify-self: center;
 }
-.logo-link{
-}
+
 svg path {
   fill: white;
 }
@@ -292,7 +291,7 @@ section.left-align p{
 }
 .blog-section-title{
   display: grid;
-  grid-template: repeat(3, 1fr), repeat(3,1fr);
+  grid-template: repeat(3, 1fr) / repeat(3,1fr);
   width: 100%;
 
   justify-items: center;
