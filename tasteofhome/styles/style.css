@@ -379,9 +379,40 @@ details div li{
   font-size: 1.5em;
 }
 
-
-
-
+/* CSS for the cooking chicken page */
+.img-floats{
+  /* width: 70%; */
+  margin: 0 auto;
+}
+.img-floats section{
+display: grid;
+}
+.img-floats section img{
+  width: 45%;
+  max-width: 60vh;
+  margin-bottom: 20px;
+  grid-row: 1/3;
+  align-self: center;
+}
+.img-floats section p, .img-floats section h2{
+  text-align: left;
+  margin-top:0;
+}
+.img-floats section p{
+  align-items: center;
+}
+div.float-right img{
+  margin-left: 30px;
+  float: right;
+}
+ div.float-left img{
+  margin-right: 30px;
+  float: left;
+  
+}
+img.full-width{
+  width: 100%;
+}
 
 @media screen and (max-width: 900px) {
   .blog-posts article{
@@ -442,5 +473,14 @@ details div li{
     width: 80%;
     text-align: left;
   }
-
+  /* For Cooking Chicken */
+  .img-floats section img{
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 30px auto;
+  }
+  .img-floats section p, .img-floats section h2{
+    text-align: center;
+  }
 }
