@@ -480,7 +480,7 @@ img.full-width{
     max-width: 100%;
     margin: 30px auto;
   }
-  .img-floats section p, .img-floats section h2{
+  .img-floats section p, .img-floats section h2, section.left-align p{
     text-align: center;
   }
 }
